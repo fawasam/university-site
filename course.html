@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>University Website</title>
+</head>
+<body>
+    <section class="sub-header sc">
+        <nav>
+            <a class="logo" href="">LOGO</a>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu(this)"></i>
+        </nav>
+       <h1>Our Courses</h1>
+    </section>
+
+<!-- content  -->
+
+    <!-- --------course-------- -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
+    
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odit quis, animi ut nesciunt aspernatur totam numquam earum veritatis delectus ipsum, soluta accusantium ratione rem ullam, officiis labore eos. Voluptas!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odit quis, animi ut nesciunt aspernatur totam numquam earum veritatis delectus ipsum, soluta accusantium ratione rem ullam, officiis labore eos. Voluptas!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Grduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odit quis, animi ut nesciunt aspernatur totam numquam earum veritatis delectus ipsum, soluta accusantium ratione rem ullam, officiis labore eos. Voluptas!</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ---------------Footer------------- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia atque explicabo quae deleniti. <br> Deleniti quidem blanditiis reprehenderit fugit excepturi, repudiandae veniam dolore quod ullam. Sit aliquam vero non explicabo.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with  <i class="fa fa-heart"></i>  by university </p>
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+<button class=" scroll-top" data-scroll="up" type="button">
+ <i class="fa fa-chevron-up"></i>
+ </button>
+    
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <script text="type/javascript">
+        var navLinks = document.getElementById("nav-links")
+        function showMenu(x)
+        {
+            x.classList.toggle("fa-times"); 
+            navLinks.classList.toggle("active");
+         }
+     
+         $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scroll-top').fadeIn();
+                } else {
+                    $('.scroll-top').fadeOut();
+                }
+            });
+        $('.scroll-top').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 100);
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

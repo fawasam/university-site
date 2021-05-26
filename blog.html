@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>University Website</title>
+</head>
+<body>
+    <section class="sub-header sb">
+        <nav>
+            <a class="logo" href="">LOGO</a>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu(this)"></i>
+        </nav>
+       <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+<!-- blog   -->
+<section class="blog-content">
+    <div class="row"> 
+        <div class="blog-left">
+            <img src="images/11.jpg" alt="">
+            <h2>Our Certificate & Online Programs For 2021</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia quaerat quasi in nesciunt voluptate error! Distinctio quis consectetur incidunt aut libero, exercitationem accusamus nam nihil blanditiis alias magni soluta.</p>
+         <br>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nihil dolor eius commodi eum, eligendi perferendis incidunt officia esse nisi non, sapiente placeat? Esse eum ullam, atque magni tempora voluptas! <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minima animi corrupti dolores voluptates ea distinctio iusto maxime tempore exercitationem, molestiae nobis perspiciatis harum dolore itaque alias delectus tenetur eligendi.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nihil dolor eius commodi eum, eligendi perferendis incidunt officia esse nisi non, sapiente placeat? Esse eum ullam, atque magni tempora voluptas! <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minima animi corrupti dolores voluptates ea distinctio iusto maxime tempore exercitationem, molestiae nobis perspiciatis harum dolore itaque alias delectus tenetur eligendi.</p>
+       
+
+        
+    </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+                <span>Data Science</span>
+                <span>30</span>
+                <span>Machine Learning</span>
+                <span>15</span>
+                <span>Computer Science</span>
+                <span>43</span>
+            </div>
+        </div>
+    </div>
+    <div class="comment-box">
+        <h3>Leave a comment</h3>
+        <form action="" class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your Comment"></textarea>
+            <button class="hero-btn red-btn" type="submit">POST COMMENT</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- ---------------Footer------------- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia atque explicabo quae deleniti. <br> Deleniti quidem blanditiis reprehenderit fugit excepturi, repudiandae veniam dolore quod ullam. Sit aliquam vero non explicabo.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with  <i class="fa fa-heart"></i>  by university </p>
+</section>
+    
+    
+    
+    
+    
+    
+    
+<button class=" scroll-top" data-scroll="up" type="button">
+    <i class="fa fa-chevron-up"></i>
+    </button>
+       
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+       
+       <script text="type/javascript">
+           var navLinks = document.getElementById("nav-links")
+           function showMenu(x)
+           {
+               x.classList.toggle("fa-times"); 
+               navLinks.classList.toggle("active");
+            }
+        
+            $(document).ready(function () {
+               $(window).scroll(function () {
+                   if ($(this).scrollTop() > 100) {
+                       $('.scroll-top').fadeIn();
+                   } else {
+                       $('.scroll-top').fadeOut();
+                   }
+               });
+           $('.scroll-top').click(function () {
+                   $("html, body").animate({
+                       scrollTop: 0
+                   }, 100);
+                   return false;
+               });
+           });
+       </script>
+  
+</body>
+</html>
